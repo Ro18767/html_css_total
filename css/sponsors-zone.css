@@ -1,0 +1,15 @@
+
+.sponsors-zone {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    row-gap: calc(25 * var(--design-pixel-size));
+    column-gap: calc(45 * var(--design-pixel-size));
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sponsors-zone img {
+    width: calc(57 * var(--design-pixel-size));
+    height: calc(32 * var(--design-pixel-size));
+    filter: brightness(0.7);
+}

@@ -1,0 +1,186 @@
+
+.says-zone {
+    display: flex;
+    column-gap: calc(27 * var(--design-pixel-size));
+    row-gap: calc((27 + 45) * var(--design-pixel-size));
+    width: 100%;
+    margin-bottom: calc(120 * var(--design-pixel-size));
+    --padding-x: calc(20 * var(--design-pixel-size));
+    --padding-y: calc(-13 * var(--design-pixel-size));
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 calc(27 * var(--design-pixel-size));
+}
+
+.says-zone.big {
+    --padding-x: calc(18 * var(--design-pixel-size));
+    --padding-y: calc(-18 * var(--design-pixel-size));
+    margin-top: calc(63 * var(--design-pixel-size));
+}
+
+.says-zone .says-block {
+    height: calc(192 * var(--design-pixel-size));
+    background: #eaebed;
+    position: relative;
+}
+
+.says-zone .says-block img {
+    position: absolute;
+    left: var(--padding-x);
+    top: var(--padding-y);
+    width: calc(100% - (2 * var(--padding-x)));
+    height: calc(100% - (2 * var(--padding-y)));
+    object-fit: cover;
+}
+
+.says-zone .says-block-img {
+    flex-shrink: 1;
+    width: min(100%, calc(209 * var(--design-pixel-size)));
+}
+
+.big .says-block-img {
+    width: min(100%, calc(253 * var(--design-pixel-size)));
+}
+
+
+.says-zone .says-block-text {
+    width: calc(200 * var(--design-pixel-size));
+
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 min(5%, calc(40 * var(--design-pixel-size)));
+    gap: calc(17 * var(--design-pixel-size));
+
+}
+
+
+.says-zone .says-block img {
+    --padding-x: calc(20 * var(--design-pixel-size));
+    --padding-y: calc(-13 * var(--design-pixel-size));
+    position: absolute;
+    left: var(--padding-x);
+    top: var(--padding-y);
+    width: calc(100% - (2 * var(--padding-x)));
+    height: calc(100% - (2 * var(--padding-y)));
+    object-fit: cover;
+}
+
+.says-zone.big .says-block-img {
+    flex-shrink: 1;
+    width: min(100%, calc(209 * var(--design-pixel-size)));
+}
+
+.big .says-block-img {
+    width: min(100%, calc(253 * var(--design-pixel-size)));
+}
+
+.says-zone.big .says-block img {
+    --padding-x: calc(18 * var(--design-pixel-size));
+    --padding-y: calc(-18 * var(--design-pixel-size));
+}
+
+
+.says-zone.big .says-block-text {
+    background: none;
+    margin-top: var(--padding-y);
+    height: min(calc(-2 * var(--padding-y) + (192 + 45) * var(--design-pixel-size)), auto);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1.5;
+
+
+}
+
+
+.says-zone .inline-center {
+    display: inline;
+    text-align: center;
+}
+
+.says-zone .says-block-text span {
+    color: #808080;
+    line-height: 1.5;
+}
+
+
+.says-zone .says-block-text .stars {
+    display: flex;
+    justify-content: space-between;
+    width: calc(55 * var(--design-pixel-size));
+}
+
+.says-zone .says-block-text .star {
+    background: #f0e14a;
+    width: calc(7 * var(--design-pixel-size));
+    height: calc(7 * var(--design-pixel-size));
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.says-zone .controls {
+    display: flex;
+    position: absolute;
+    bottom: calc(-45 * var(--design-pixel-size));
+}
+
+.radio_controls {
+
+    left: 50%;
+    transform: translateX(-50%);
+    gap: calc(1 * var(--design-pixel-size));
+}
+
+.radio_controls input {
+    display: block;
+    appearance: none;
+    background: #ced0cf;
+    border: 0;
+    border-radius: 50%;
+
+    width: calc(6 * var(--design-pixel-size));
+    height: calc(6 * var(--design-pixel-size));
+}
+
+.radio_controls input:checked {
+    background: #7deedc;
+}
+
+.btn_controls {
+    right: 0;
+    gap: calc(15 * var(--design-pixel-size));
+
+}
+
+.btn_controls a {
+    display: block;
+    appearance: none;
+    background: #ffffff;
+    border: 0;
+    width: calc(27 * var(--design-pixel-size));
+    height: calc(27 * var(--design-pixel-size));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_controls a div {
+    background: #a1a1a1;
+    clip-path: polygon(100% 0%, 50% 50%, 100% 100%, 50% 100%, 0% 50%, 50% 0);
+    width: calc(9 * var(--design-pixel-size));
+    height: calc(9 * var(--design-pixel-size));
+}
+
+.btn_controls a.next {
+    background: #74f7e9;
+}
+
+
+.btn_controls a.next div {
+    background: #105153;
+    transform: rotate(180deg);
+
+}

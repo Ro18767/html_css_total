@@ -1,0 +1,28 @@
+.say-hello section {
+    padding-top: var(--page-header-height);
+}
+
+.first-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.first-content>* {
+    text-align: center;
+}
+
+.first-content button {
+    height: calc(30 * var(--design-pixel-size));
+    width: calc(125 * var(--design-pixel-size));
+    border: min(1px, calc(1 * var(--design-pixel-size))) solid #98999b;
+    border-radius: min(2px, calc(2 * var(--design-pixel-size)));
+    color: #808080;
+
+}
+
+.contact-us-btn {
+    margin: calc(77 * var(--design-pixel-size)) 0;
+}

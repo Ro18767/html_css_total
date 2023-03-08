@@ -1,0 +1,99 @@
+
+.page-header header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    width: 60px;
+    height: 24px;
+
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+}
+
+.menu-state {
+    appearance: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+
+    background: #000000;
+    border: 0;
+    display: none;
+}
+
+.menuny-wrp {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+
+}
+
+.menuny-wrp header {
+    height: var(--page-header-height);
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.menu-list {
+    
+    /* z-index: 9999; */
+    padding: calc(5 * var(--design-pixel-size));
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: min(calc(-5 * var(--design-pixel-size)));
+    width: min(100%, calc(200 * var(--design-pixel-size)));
+    flex-direction: column;
+    align-items: flex-end;
+    background: #dddfe3;
+
+}
+
+.menu-state:checked {
+    display: block;
+    position: fixed;
+    z-index: 4000;
+    opacity: 0.2;
+
+}
+
+.menu-state:checked~.screen .menu-list {
+    display: flex;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu-state:checked~.screen .menu {
+    background: #80808080;
+}
+
+.menu {
+    border-radius: calc(4 * var(--design-pixel-size));
+    width: 24px;
+    height: 24px;
+
+}

@@ -1,0 +1,39 @@
+
+
+
+.img-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(6 * var(--design-pixel-size));
+    margin-bottom: calc(66 * var(--design-pixel-size))
+}
+
+.img-content .img-wrp {
+    position: relative;
+    width: calc(196 * var(--design-pixel-size));
+}
+
+.img-content .img-wrp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-content .img-wrp.rect img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.img-content .img-wrp.rect::before {
+    display: block;
+    padding-top: 100%;
+    content: '';
+}
+
+
+

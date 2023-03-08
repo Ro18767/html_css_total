@@ -1,0 +1,117 @@
+.boxes-wrp1 {
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: calc(14 * var(--design-pixel-size));
+    margin: calc(65 * var(--design-pixel-size)) 0;
+}
+
+.boxes-item1 {
+    height: calc(244 * var(--design-pixel-size));
+}
+
+.send-box {
+    flex-grow: 1;
+    padding: calc(15 * var(--design-pixel-size));
+}
+
+.send-box form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.send-box .inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: calc(6 * var(--design-pixel-size));
+
+}
+
+.send-box input,
+.send-box a {
+    height: calc(27 * var(--design-pixel-size));
+}
+
+.send-box textarea {
+    height: calc(66 * var(--design-pixel-size));
+}
+
+.send-box input,
+.send-box textarea {
+    padding: calc(3 * var(--design-pixel-size));
+    color: #ffffff;
+}
+
+.send-box ::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.send-box .inputs * {
+    background: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #999999;
+}
+
+.send-box .inputs :focus {
+    background: #ffffff20;
+}
+
+
+.send-box a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    outline: 0;
+    color: #5d7381;
+    width: calc(129 * var(--design-pixel-size));
+    background: #6feee5;
+}
+
+.send-box a>* {
+    background: none;
+    width: 100%;
+}
+
+.send-box a:focus,
+.send-box a:hover {
+    background: #c2fffb;
+}
+
+
+
+.adress-box {
+    font-size: calc(8 * var(--design-pixel-size));
+    padding: calc(15 * var(--design-pixel-size));
+    width: min(100%, calc(265 * var(--design-pixel-size)));
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.adress-box .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.adress-box a {
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.adress-box iframe {
+    height: 0;
+    width: 100%;
+    flex-grow: 1;
+}

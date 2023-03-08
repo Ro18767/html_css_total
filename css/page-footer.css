@@ -1,0 +1,41 @@
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(45 * var(--design-pixel-size)) 0;
+    background: #262b2e;
+    color: #8b8f92;
+}
+
+.page-footer h6 {
+    font-size: calc(9.5 * var(--design-pixel-size));
+}
+
+.page-footer .images {
+    margin-top: calc(8 * var(--design-pixel-size));
+    margin-bottom: calc(23 * var(--design-pixel-size));
+    display: flex;
+}
+
+.page-footer a {
+    background: #414449;
+    width: calc(24 * var(--design-pixel-size));
+    height: calc(21 * var(--design-pixel-size));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 calc(1.5 * var(--design-pixel-size));
+
+}
+
+.page-footer a img {
+    width: calc(11 * var(--design-pixel-size));
+    height: calc(11 * var(--design-pixel-size));
+
+}
+
+
+.page-footer a:nth-child(1) {
+    background: #76e9e2;
+}
